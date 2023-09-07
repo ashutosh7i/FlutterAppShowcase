@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- add Application Title here -->
+    <title>Flutter App Showcase</title>
+  </head>
+  <body>
+    <!-- add Application Title here -->
+    <h1>Title</h1>
+
+    <h3>(This is a visualization of the final app)</h3>
+
+    <!-- serious and well Calibrated code ahead🗿 -->
+    <!-- don't tinker💣💥 -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Noto+Serif+Vithkuqi:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        flex-direction: column;
+        background-color: rgb(3, 19, 56);
+      }
+
+      #container {
+        text-align: center;
+      }
+
+      #border1 {
+        border: 5px solid rgb(72, 72, 72);
+        border-radius: 50px;
+        width: 368px;
+        height: 750px;
+        position: relative;
+      }
+
+      #border2 {
+        border: 5px solid rgb(124, 124, 124);
+        border-radius: 46px;
+        width: 360px;
+        height: 741px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #border2::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 42px;
+        z-index: -1;
+      }
+
+      #border3 {
+        border: 8px solid rgb(0, 0, 0);
+        border-radius: 40px;
+        width: 345px;
+        height: 726px;
+        position: relative;
+      }
+
+      .iframe-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 30px;
+        width: 345px;
+        height: 726px;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        overflow: auto;
+      }
+      h1 {
+        font-family: "Exo 2", sans-serif;
+      }
+      h3 {
+        font-family: "Noto Serif Vithkuqi", serif;
+      }
+
+      h1,
+      h3,
+      nav,
+      footer {
+        text-align: center;
+        color: white;
+      }
+    </style>
+
+    <div id="container">
+      <div id="border1">
+        <div id="border2">
+          <div id="border3"></div>
+          <iframe
+            src="web/"
+            frameborder="0"
+            scrolling="yes"
+            width="343px"
+            height="725px"
+            class="iframe-background"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>
+        (This visualization is done using
+        <a
+          href="https://github.com/ashutosh7i/FlutterAppVisualizer"
+          style="color: rgb(101, 255, 247)"
+          >FlutterAppVisualizer🐦</a
+        >
+        )
+      </h3>
+      <h3>
+        Made with 💖 by
+        <a
+          href="https://ashutosh7i.dev"
+          style="color: rgb(101, 255, 247); font-family: Roboto, sans-serif"
+        >
+          ashutosh7i</a
+        >
+      </h3>
+    </footer>
+  </body>
+</html>
