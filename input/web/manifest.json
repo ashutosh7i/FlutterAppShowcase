@@ -1,6 +1,6 @@
 {
-    "name": "figma_to_flutter",
-    "short_name": "figma_to_flutter",
+    "name": "material_calculator",
+    "short_name": "material_calculator",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
