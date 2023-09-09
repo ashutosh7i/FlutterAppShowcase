@@ -14,6 +14,7 @@ To use FlutterAppShowcase, follow these steps:
    ```
 
 2. Build the app for the web using Flutter:
+   (execute these commands in app directory)
 
 ```
 flutter create --platforms web
@@ -28,32 +29,50 @@ The second command builds webApp under build/web folder.)
    <br>copy the `web` folder
    <br> and replace with the `web` folder in this repo.
 
-4. Rename the title and description in the index.html file to match your app's information:
+4. in `input` folder, there is a file named `ParsingEngine.html`, copy the code from that file and paste in `input/web/index.html`.
+   ( ie replace `input/web/index.html` with code of `input/ParsingEngine.html`).
+
+* This should show the live preview on the page.
+if not, follow the steps in ```ParseEngine.html```
+
+5. Rename the title and description in the main index.html file to match your app's information:
 
 ```
    <!-- add Application Title here -->
    <title>Your App Name</title>
 ```
 
-(done, now when you serve this directory with any server and if everything went right, you should see a live version of your app in ```index.html```)
+(done, now when you serve this directory with any server and if everything went right, you should see a live version of your app from `index.html`)
 
-5. (optional) Host your application,
-you can use the LiveServer Extention,
-or XAMPP server for local testing.
-<br>
-you can use Github Pages or Firebase/Netlify any server for hosting this.
+* The final structure should look like-
+
+   * input
+      * web
+         * assets,icons,index.html,flutter.js etc fils.
+      * ParsingEngine.html
+   * index.html
+
+
+5. Done, Host your application,
+   you can use the LiveServer Extention,
+   or XAMPP server for local testing.
+   <br>
+   you can use Github Pages or Firebase/Netlify any server for hosting this.
 
 ## Features-
 
 Now, your app will be accessible online in a browser. Users can interact with it, including touch and scroll actions. It is also responsive and will adapt beautifully to both mobile and desktop screens.
 
 ## Working
+
 The visualization is achieved by embedding your Flutter app's web build within an HTML template. The template provides a border and a device frame, giving users the impression of using a real device. The iframe within the template loads your web build, allowing users to interact with your app as if it were installed on their Android device.
 
-
+The reason behind this many tasks is the bugs in flutter rendering process, more on that
+[here](https://github.com/flutter/flutter/issues/116360)
 
 This tool offers a convenient way to demonstrate your Flutter app's capabilities to potential users or clients without requiring them to install the app on their devices.
 
 Note: This is a visualization tool and does not host the actual app. Users must have an internet connection to access the app through this showcase.
+The view of application depends on the quality of flutter code and responsiveness by developer
 
 Enjoy showcasing your Flutter app online!
