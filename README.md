@@ -16,14 +16,14 @@ To use FlutterAppShowcase, follow these steps:
 2. Build the app for the web using Flutter:
    (execute these commands in app directory)
 
-```
-flutter create --platforms web
+   ```
+   flutter create --platforms web
 
-flutter build web --web-renderer html
-```
+   flutter build web --web-renderer html
+   ```
 
-(the first commands enables Web platform for your project.<br>
-The second command builds webApp under build/web folder.)
+   (the first commands enables Web platform for your project.<br>
+   The second command builds webApp under build/web folder.)
 
 3. Now copy the generated build from your project `yourProjectName/build/web`
    <br>copy the `web` folder
@@ -33,16 +33,16 @@ The second command builds webApp under build/web folder.)
    ( ie replace `input/web/index.html` with code of `input/ParsingEngine.html`).
 
 * This should show the live preview on the page.
-if not, follow the steps in ```ParseEngine.html```
+   if not, follow the steps in ```ParseEngine.html```
 
 5. Rename the title and description in the main index.html file to match your app's information:
 
-```
-   <!-- add Application Title here -->
-   <title>Your App Name</title>
-```
+   ```
+      <!-- add Application Title here -->
+      <title>Your App Name</title>
+   ```
 
-(done, now when you serve this directory with any server and if everything went right, you should see a live version of your app from `index.html`)
+   (done, now when you serve this directory with any server and if everything went right, you should see a live version of your app from `index.html`)
 
 * The final structure should look like-
 
